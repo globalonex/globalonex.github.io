@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="particles"></div>
+
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+            <div class="logo">ISMAGILOV PROD.</div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">
+                            <i class="fas fa-user-astronaut"></i>
+                            <span>Обо мне</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <i class="fas fa-rocket"></i>
+                            <span>Проекты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+
+    <div class="card">
+    <svg 
+        viewBox="0 0 100% 100%"
+        xmlns='http://www.w3.org/2000/svg'
+        class="noise"
+        >
+        <filter id='noiseFilter'>
+        <feTurbulence 
+                        type='fractalNoise' 
+                        baseFrequency='0.85' 
+                        numOctaves='6' 
+                        stitchTiles='stitch' />
+        </filter>
+
+        <rect
+            width='100%'
+            height='100%'
+            preserveAspectRatio="xMidYMid meet"
+            filter='url(#noiseFilter)' />
+    </svg>
+    <div class="content">
+        <h1 class="title">Привет, я <span class="highlight">Ислам</span></h1>
+        <p class="subtitle">philanthrope, entrepreneur, full-stack lead developer, AI/ML/SRE/DevOps/Security Engineer, Data Scientist</p>
+        <a href="#projects" class="cta-button">
+            <i class="fas fa-globe"></i>
+            <span>Мои проекты</span>
+        </a>
+    </div>
+    </div>
+    <div class="gradient-bg">
+    <svg 
+        viewBox="0 0 100vw 100vw"
+        xmlns='http://www.w3.org/2000/svg'
+        class="noiseBg"
+        >
+        <filter id='noiseFilterBg'>
+        <feTurbulence 
+                        type='fractalNoise'
+                        baseFrequency='0.6'
+                        stitchTiles='stitch' />
+        </filter>
+
+        <rect
+            width='100%'
+            height='100%'
+            preserveAspectRatio="xMidYMid meet"
+            filter='url(#noiseFilterBg)' />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+        <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        </defs>
+    </svg>
+    <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+    </div>
+    </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                <span>Обо мне</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="hologram-frame">
+                        <div class="hologram-effect"></div>
+                        <img src="assets/images/profile.jpg" alt="Мое фото">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Кто я</h3>
+                    <p>Я, Ислам Исмагилов, начал свой увлекательный путь в веб-программировании совсем молодым, всего с 11 лет. С самых первых шагов я понял, что это мое призвание, и с горящими глазами изучал основы программирования. С каждым днем мое увлечение веб-разработкой становилось все сильнее. Я начал с малого, осваивая основы программирования и создавая свои первые веб-проекты. Сразу же после этого я решился на большой вызов и создал инвестиционный проект на основе матричной системы. Несмотря на свой юный возраст, я принял этот вызов и успешно реализовал свою идею, добиваясь впечатляющих результатов. Со временем я не останавливался на достигнутом и решил перейти к более сложным проектам. Я освоил бинарную систему и смог реализовать проект на ее основе, расширяя свой профессиональный опыт и навыки.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tech-scroll">
+            <div class="tech-track" id="techTrack">
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>Python</span>
+                <span>PHP</span>
+                <span>Java</span>
+                <span>SQL</span>
+                <span>NoSQL</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>Vue</span>
+                <span>Vuex</span>
+                <span>Redux</span>
+                <span>jQuery</span>
+                <span>Axios</span>
+                <span>Nuxt.js</span>
+                <span>Docker</span>
+                <span>DevOps</span>
+                <span>AI/ML</span>
+                <span>Security</span>
+                <span>Blockchain</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-rocket"></i>
+                <span>Мои проекты</span>
+            </h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="nebula-effect"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Matrix</h3>
+                        <p>Base matrix function for using in referral system</p>
+                        <a href="https://github.com/globalonex/Matrix" class="project-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="nebula-effect" style="background: linear-gradient(135deg, #ff4d00, #8a2be2);"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Laravel ExcelParser</h3>
+                        <p>Simply ExcelParser for Laravel, use like a command query for parse</p>
+                        <a href="https://github.com/globalonex/ExcelParser" class="project-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-satellite"></i>
+                <span>Контакты</span>
+            </h2>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Ваше имя</label>
+                    <span class="highlight"></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Ваш Email</label>
+                    <span class="highlight"></span>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Ваше сообщение</label>
+                    <span class="highlight"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Отправить сообщение</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://t.me/ismagilovx" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://github.com/globalonex" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/islamismagilov/" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Портфолио. Все права защищены.</p>
+            <div class="space-station">
+                <i class="fas fa-satellite"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
